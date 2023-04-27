@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="11">
+      <module name="MetaDataExtractor.base.commonMain" target="1.8" />
+      <module name="MetaDataExtractor.base.commonTest" target="1.8" />
+      <module name="MetaDataExtractor.base.desktopMain" target="1.8" />
+      <module name="MetaDataExtractor.base.desktopTest" target="1.8" />
+      <module name="MetaDataExtractor.music.commonMain" target="1.8" />
+      <module name="MetaDataExtractor.music.commonTest" target="1.8" />
+      <module name="MetaDataExtractor.music.desktopMain" target="1.8" />
+      <module name="MetaDataExtractor.music.desktopTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
