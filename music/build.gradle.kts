@@ -43,7 +43,9 @@ publishing {
     }
 }
 kotlin {
-    android()
+    android {
+        publishLibraryVariants("release")
+    }
 
     jvm("desktop")
 
@@ -84,7 +86,11 @@ kotlin {
 
         val desktopTest by getting
 
-        val jsMain by getting
+        val jsMain by getting{
+            dependencies {
+                implementation(npm("music-metadata-browser","2.5.10"))
+            }
+        }
         val jsTest by getting
 
      /*   val iosX64Main by getting

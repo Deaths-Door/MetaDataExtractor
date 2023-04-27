@@ -1,15 +1,8 @@
 package com.deathsdoor.music
 
 actual class Music internal actual constructor(filePath: String) {
-
-    //  val trackArtwork : String?
-    //  val trackLength : Double
-    actual var tagOrCreate: Boolean
-        get() = TODO("Not yet implemented")
-        set(value) {}
-    actual var valueOrDefault: Boolean
-        get() = TODO("Not yet implemented")
-        set(value) {}
+    actual var tagOrCreate: Boolean = true
+    actual var valueOrDefault: Boolean = true
     actual var name: String
         get() = TODO("Not yet implemented")
         set(value) {}

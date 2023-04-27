@@ -17,8 +17,8 @@ actual class Music internal actual constructor(filePath: String) {
 
     private fun saveChanges() = audioFile.commit()
 
-    actual var tagOrCreate : Boolean = false
-    actual var valueOrDefault : Boolean = false
+    actual var tagOrCreate : Boolean = true
+    actual var valueOrDefault : Boolean = true
 
     actual var name:String get() = tag.getFirst(FieldKey.TITLE)
         set(value) {
