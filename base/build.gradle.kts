@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-   // kotlin("native.cocoapods")
+    //kotlin("native.cocoapods")
     id("com.android.library")
 }
 
@@ -13,10 +13,9 @@ kotlin {
         browser()
         nodejs()
     }
-
-   /* cocoapods {
-        summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
+/*
+    cocoapods {
+        summary = "Base module for https://github.com/Deaths-Door/MetaDataExtractor github library"
         version = "1.0"
         ios.deploymentTarget = "14.1"
         framework {
