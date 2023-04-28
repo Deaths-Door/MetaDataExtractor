@@ -6,13 +6,12 @@ plugins {
 }
 
 val description = "MetaDataExtractor is a cross-platform tool for extracting metadata from files, supporting desktop, iOS, Android, and web (JS). It's open-source and user-friendly."
-val currentVersion = "0.0.1"
+val currentVersion = "0.1.0"
 val moduleName = "music"
 
 publishing {
     val repoName = "MetaDataExtractor"
     val groupName = "com.deathsdoor.metaDataExtractor"
-    val currentVersion = "0.0.1"
     val repoURL = "https://github.com/Deaths-Door/MetaDataExtractor"
     repositories {
         maven {
