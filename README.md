@@ -13,6 +13,7 @@ To use the library, add the following dependency to your app's `build.gradle` fi
   implementation("com.github.Deaths-Door:MetaDataExtractor:base-android:0.1.1")
   implementation("com.github.Deaths-Door:MetaDataExtractor:base-desktop:0.1.1")
   implementation("com.github.Deaths-Door:MetaDataExtractor:base-js:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:base-ios:0.1.1")
 ```
 
 ## Music Module
@@ -22,6 +23,7 @@ To use the library, add the following dependency to your app's `build.gradle` fi
   implementation("com.github.Deaths-Door:MetaDataExtractor:music-android:0.1.1")
   implementation("com.github.Deaths-Door:MetaDataExtractor:music-desktop:0.1.1")
   implementation("com.github.Deaths-Door:MetaDataExtractor:music-js:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:music-ios:0.1.1")
 ```
 
 # Methods 
