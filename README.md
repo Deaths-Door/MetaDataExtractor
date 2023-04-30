@@ -1,7 +1,7 @@
 # MetaDataExtractor
 MetaDataExtractor is a cross-platform tool for extracting metadata from files, supporting desktop, iOS, Android, and web (JS). It's open-source and user-friendly.
 
-**Note :**  The AstroPlayer library is currently under development, and as such, some parts of the library may not work as expected. The Android platform is the only one that has been tested, while the Javascript platform is untested. The JVM and iOS platforms are not yet supported. Additionally, not all of the methods listed in the code may be available, as they are still being worked on. Certain functions may also not work as expected due to the ongoing development process.
+**Note :**  The MetaDataExtractor library is currently under development, and as such, some parts of the library may not work as expected. The Android and Desktop platform is the only one that has been tested. The JS and iOS platforms are not yet supported. Additionally, not all of the methods listed in the code may be available, as they are still being worked on. Certain functions may also not work as expected due to the ongoing development process.
 
 # Usage
 To use the library, add the following dependency to your app's `build.gradle` file: 
@@ -23,6 +23,10 @@ To use the library, add the following dependency to your app's `build.gradle` fi
   implementation("com.github.Deaths-Door:MetaDataExtractor:music-desktop:0.1.1")
   implementation("com.github.Deaths-Door:MetaDataExtractor:music-js:0.1.1")
 ```
+
+# Methods 
+
+.... TODO make documentation for it
 
 # Contribution
  Any contributions, whether they are large or small, are greatly appreciated. This can include major features, bug fixes, additional language translations, recommendations, or unit/integration tests.
