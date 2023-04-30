@@ -1,7 +1,8 @@
 plugins {
     kotlin("multiplatform")
-    //kotlin("native.cocoapods")
+    kotlin("native.cocoapods")
     id("com.android.library")
+    id("maven-publish")
 }
 
 kotlin {
@@ -13,7 +14,9 @@ kotlin {
         browser()
         nodejs()
     }
-/*
+    
+    ios()
+
     cocoapods {
         summary = "Base module for https://github.com/Deaths-Door/MetaDataExtractor github library"
         version = "1.0"
@@ -21,7 +24,7 @@ kotlin {
         framework {
             baseName = "base"
         }
-    }*/
+    }
     
     sourceSets {
         val commonMain by getting
