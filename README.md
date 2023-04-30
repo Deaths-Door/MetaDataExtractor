@@ -4,16 +4,25 @@ MetaDataExtractor is a cross-platform tool for extracting metadata from files, s
 **Note :**  The AstroPlayer library is currently under development, and as such, some parts of the library may not work as expected. The Android platform is the only one that has been tested, while the Javascript platform is untested. The JVM and iOS platforms are not yet supported. Additionally, not all of the methods listed in the code may be available, as they are still being worked on. Certain functions may also not work as expected due to the ongoing development process.
 
 # Usage
-To use the library, add the following dependency to your app's `build.gradle` file:
+To use the library, add the following dependency to your app's `build.gradle` file: 
+
+## Base module 
 
 ```kotlin
-  implementation("com.github.Deaths-Door:MetaDataExtractor:0.1.0")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:base:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:base-android:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:base-desktop:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:base-js:0.1.1")
 ```
 
-# Methods 
+## Music Module
 
-TODO go to module README.md to get it
-
+```kotlin
+  implementation("com.github.Deaths-Door:MetaDataExtractor:music:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:music-android:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:music-desktop:0.1.1")
+  implementation("com.github.Deaths-Door:MetaDataExtractor:music-js:0.1.1")
+```
 
 # Contribution
  Any contributions, whether they are large or small, are greatly appreciated. This can include major features, bug fixes, additional language translations, recommendations, or unit/integration tests.
