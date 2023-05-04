@@ -1,0 +1,6 @@
+framework module music {
+  umbrella header "placeholder.h"
+
+  export *
+  module * { export * }
+}

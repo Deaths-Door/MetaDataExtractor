@@ -6,9 +6,21 @@ plugins {
 }
 
 kotlin {
-    android()
+    android {
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "11"
+            }
+        }
+    }
 
-    jvm("desktop")
+    jvm {
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "11"
+            }
+        }
+    }
 
     js(IR) {
         browser()
@@ -32,8 +44,8 @@ kotlin {
 
         val androidMain by getting
 
-        val desktopMain by getting
-        val desktopTest by getting
+        val jvmMain by getting
+        val jvmTest by getting
 
         val jsMain by getting
         val jsTest by getting

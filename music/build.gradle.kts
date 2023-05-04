@@ -7,7 +7,7 @@ plugins {
 
 object Metadata {
     val module = "music"
-    val version = "0.1.1"
+    val version = "0.1.2"
     val description = "MetaDataExtractor is a cross-platform tool for extracting metadata from files, supporting desktop, iOS, Android, and web (JS). It's open-source and user-friendly."
     val repository = "https://github.com/Deaths-Door/MetaDataExtractor"
 }
@@ -15,9 +15,20 @@ object Metadata {
 kotlin {
     android {
         publishLibraryVariants("release")
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "11"
+            }
+        }
     }
 
-    jvm("desktop")
+    jvm {
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "11"
+            }
+        }
+    }
 
     js(IR) {
         browser()
@@ -50,13 +61,13 @@ kotlin {
             }
         }
 
-        val desktopMain by getting {
+        val jvmMain by getting {
             dependencies {
                 implementation("net.jthink:jaudiotagger:3.0.0")
             }
         }
 
-        val desktopTest by getting
+        val jvmTest by getting
 
         val jsMain by getting{
             dependencies {
