@@ -1,4 +1,4 @@
-package com.deathsdoor.music
+package com.deathsdoor.metadataextractor.music
 
 import com.deathsdoor.base.MetadataExtractor
 

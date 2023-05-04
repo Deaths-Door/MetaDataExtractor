@@ -1,4 +1,4 @@
-package com.deathsdoor.music
+package com.deathsdoor.metadataextractor.music
 
 
 actual class Music internal actual constructor(filePath: String) {
