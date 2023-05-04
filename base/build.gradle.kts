@@ -31,7 +31,7 @@ kotlin {
 
     cocoapods {
         summary = "Base module for https://github.com/Deaths-Door/MetaDataExtractor github library"
-        version = "1.0"
+        version = "0.1.1"
         ios.deploymentTarget = "14.1"
         framework {
             baseName = "base"
@@ -53,7 +53,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.deathsdoor.base"
+    namespace = "com.deathsdoor.metadataextractor.base"
     compileSdk = 32
     defaultConfig {
         minSdk = 21
