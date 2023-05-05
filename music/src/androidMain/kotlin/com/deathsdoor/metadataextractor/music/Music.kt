@@ -6,7 +6,7 @@ import org.jaudiotagger.tag.FieldKey
 import org.jaudiotagger.tag.Tag
 import java.io.File
 
-actual class Music internal actual constructor(filePath: String) {
+actual class Music actual constructor(filePath: String) {
     private val audioFile: AudioFile = AudioFileIO.read(
         File(filePath).also {
             if(!it.exists()) throw IllegalArgumentException("Leider File does not exist on device for file path : $filePath")

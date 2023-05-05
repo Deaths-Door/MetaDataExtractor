@@ -6,10 +6,10 @@ plugins {
 }
 
 object Metadata {
-    val module = "music"
-    val version = "0.1.2"
-    val description = "MetaDataExtractor is a cross-platform tool for extracting metadata from files, supporting desktop, iOS, Android, and web (JS). It's open-source and user-friendly."
-    val repository = "https://github.com/Deaths-Door/MetaDataExtractor"
+    const val module = "music"
+    const val version = "0.1.2"
+    const val description = "MetaDataExtractor is a cross-platform tool for extracting metadata from files, supporting desktop, iOS, Android, and web (JS). It's open-source and user-friendly."
+    const val repository = "https://github.com/Deaths-Door/MetaDataExtractor"
 }
 
 kotlin {
@@ -22,7 +22,7 @@ kotlin {
         }
     }
 
-    jvm {
+    jvm("desktop") {
         compilations.all {
             kotlinOptions {
                 jvmTarget = "11"
@@ -34,7 +34,7 @@ kotlin {
         browser()
         binaries.executable()
     }
-    
+
     ios()
 
     cocoapods {
@@ -61,13 +61,13 @@ kotlin {
             }
         }
 
-        val jvmMain by getting {
+        val desktopMain by getting {
             dependencies {
                 implementation("net.jthink:jaudiotagger:3.0.0")
             }
         }
 
-        val jvmTest by getting
+        val desktopTest by getting
 
         val jsMain by getting{
             dependencies {
@@ -79,10 +79,8 @@ kotlin {
 }
 
 android {
-    namespace = "com.deathsdoor.music"
+    namespace =  "com.deathsdoor.metadataextractor.music"
     compileSdk = 33
-    defaultConfig {
-        minSdk = 21
-        targetSdk = 33
-    }
+    
+    defaultConfig.minSdk = 21
 }

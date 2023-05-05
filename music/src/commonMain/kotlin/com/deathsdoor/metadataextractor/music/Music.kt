@@ -4,7 +4,7 @@ import com.deathsdoor.base.MetadataExtractor
 
 fun MetadataExtractor.music(filePath: String) = Music(filePath)
 
-expect class Music internal constructor(filePath : String) {
+expect class Music constructor(filePath : String) {
     //Options
     var tagOrCreate : Boolean
     var valueOrDefault : Boolean

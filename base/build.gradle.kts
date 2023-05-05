@@ -24,7 +24,7 @@ kotlin {
 
     js(IR) {
         browser()
-        nodejs()
+        binaries.executable()
     }
     
     ios()
@@ -53,10 +53,8 @@ kotlin {
 }
 
 android {
-    namespace = "com.deathsdoor.metadataextractor.base"
-    compileSdk = 32
-    defaultConfig {
-        minSdk = 21
-        targetSdk = 32
-    }
+    namespace =  "com.deathsdoor.metadataextractor.base"
+    compileSdk = 33
+
+    defaultConfig.minSdk = 21
 }

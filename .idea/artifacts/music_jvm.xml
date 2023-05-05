@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="music-jvm">
+    <output-path>$PROJECT_DIR$/music/build/libs</output-path>
+    <root id="archive" name="music-jvm.jar">
+      <element id="module-output" name="MetaDataExtractor.music.jvmMain" />
+    </root>
+  </artifact>
+</component>

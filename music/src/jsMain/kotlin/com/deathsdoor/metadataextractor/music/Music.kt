@@ -1,7 +1,7 @@
 package com.deathsdoor.metadataextractor.music
 
 
-actual class Music internal actual constructor(filePath: String) {
+actual class Music actual constructor(filePath: String) {
     actual var tagOrCreate: Boolean
         get() = TODO("Not yet implemented")
         set(value) {}
