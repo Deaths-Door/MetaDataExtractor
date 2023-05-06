@@ -1,6 +1,6 @@
 package com.deathsdoor.metadataextractor.music
 
-import com.deathsdoor.base.MetadataExtractor
+import com.deathsdoor.metadataextractor.base.MetadataExtractor
 
 fun MetadataExtractor.music(filePath: String) = Music(filePath)
 
