@@ -31,7 +31,7 @@ kotlin {
 
     cocoapods {
         summary = "Base module for https://github.com/Deaths-Door/MetaDataExtractor github library"
-        version = "0.1.1"
+        version = "0.1.2"
         ios.deploymentTarget = "14.1"
         framework {
             baseName = "base"
@@ -57,4 +57,8 @@ android {
     compileSdk = 33
 
     defaultConfig.minSdk = 21
+    defaultConfig.targetSdk = 33
+
+    compileOptions.sourceCompatibility = JavaVersion.VERSION_11
+    compileOptions.targetCompatibility = JavaVersion.VERSION_11
 }

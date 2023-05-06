@@ -81,6 +81,10 @@ kotlin {
 android {
     namespace =  "com.deathsdoor.metadataextractor.music"
     compileSdk = 33
-    
+
     defaultConfig.minSdk = 21
+    defaultConfig.targetSdk = 33
+
+    compileOptions.sourceCompatibility = JavaVersion.VERSION_11
+    compileOptions.targetCompatibility = JavaVersion.VERSION_11
 }

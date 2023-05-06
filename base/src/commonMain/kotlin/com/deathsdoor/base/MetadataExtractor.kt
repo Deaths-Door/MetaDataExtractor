@@ -1,3 +1,3 @@
-package com.deathsdoor.base
+package com.deathsdoor.metadataextractor.base
 
 object MetadataExtractor
